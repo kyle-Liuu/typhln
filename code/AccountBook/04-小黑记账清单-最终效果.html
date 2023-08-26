@@ -38,11 +38,13 @@
     .contain {
       display: flex;
       padding: 10px;
+      height: 100vh;
     }
 
     .list-box {
       flex: 1;
       padding: 0 30px;
+      /* overflow-y: auto; */
     }
 
     .list-box a {
@@ -83,7 +85,7 @@
       <!-- 左侧列表 -->
       <div class="list-box">
 
-        <!-- 添加资产 -->
+        <!-- 添加 -->
         <form class="my-form">
           <input v-model.trim="name" type="text" class="form-control" placeholder="消费名称" />
           <input v-model.number="price" type="text" class="form-control" placeholder="消费价格" />
@@ -170,8 +172,6 @@
               type: 'pie',
               radius: '50%', // 半径
               data: [
-                // { value: 1048, name: '球鞋' },
-                // { value: 735, name: '防晒霜' }
               ],
               emphasis: {
                 itemStyle: {
@@ -199,10 +199,6 @@
             // 数据项
             series: [
               {
-                // data: [
-                //   { value: 1048, name: '球鞋' },
-                //   { value: 735, name: '防晒霜' }
-                // ]
                 data: this.list.map(item => ({ value: item.price, name: item.name }))
               }
             ]
