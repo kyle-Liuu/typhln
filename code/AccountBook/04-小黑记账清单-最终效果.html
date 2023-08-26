@@ -170,8 +170,6 @@
               type: 'pie',
               radius: '50%', // 半径
               data: [
-                // { value: 1048, name: '球鞋' },
-                // { value: 735, name: '防晒霜' }
               ],
               emphasis: {
                 itemStyle: {
@@ -199,10 +197,6 @@
             // 数据项
             series: [
               {
-                // data: [
-                //   { value: 1048, name: '球鞋' },
-                //   { value: 735, name: '防晒霜' }
-                // ]
                 data: this.list.map(item => ({ value: item.price, name: item.name }))
               }
             ]
