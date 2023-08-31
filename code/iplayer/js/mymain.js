@@ -46,6 +46,11 @@ const vm = new Vue({
         // mv地址
         mvUrl: ""
     },
+    async mounted() {
+        const list = await axios.get("https://autumnfish.cn/search?keywords=" + '五月天')
+        this.musicList = list.data.result.songs;
+            this.query = ''
+    },
     methods: {
         searchMusic: function () {
             if (this.query == 0) {
