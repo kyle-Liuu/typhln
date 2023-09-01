@@ -1,0 +1,67 @@
+
+.red {
+  color: red !important;
+}
+
+.search {
+  width: 300px;
+  margin: 20px 0;
+}
+
+.my-form {
+  display: flex;
+  margin: 20px 0;
+}
+
+.my-form input {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.my-form button {
+  margin-left: 10px;
+}
+
+.table> :not(:first-child) {
+  border-top: none;
+}
+
+.contain {
+  display: flex;
+  padding: 10px;
+}
+
+.list-box {
+  flex: 1;
+  padding: 0 30px;
+}
+
+.list-box a {
+  text-decoration: none;
+}
+
+.echarts-box {
+  width: 600px;
+  height: 400px;
+  padding: 30px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .contain {
+    flex-wrap: wrap;
+  }
+
+  .list-box {
+    width: 100%;
+  }
+
+  .echarts-box {
+    margin-top: 30px;
+  }
+}

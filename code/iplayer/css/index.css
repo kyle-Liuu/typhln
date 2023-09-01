@@ -306,25 +306,6 @@ dd {
   transform: rotate(0);
 }
 
-/* 搜索历史列表 */
-.search_history {
-  position: absolute;
-  width: 296px;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.3);
-  list-style: none;
-  right: 23px;
-  top: 50px;
-  box-sizing: border-box;
-  padding: 10px 20px;
-  border-radius: 17px;
-}
-
-.search_history li {
-  line-height: 24px;
-  font-size: 12px;
-  cursor: pointer;
-}
 
 .switch_btn {
   position: absolute;
@@ -359,15 +340,3 @@ dd {
   z-index: 980;
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-/* .video_con .shutoff {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  background: url("../images/shutoff.png") no-repeat;
-  left: 50%;
-  margin-left: 400px;
-  margin-top: -273px;
-  top: 50%;
-  z-index: 995;
-} */
