@@ -35,7 +35,7 @@
                 <!-- 通过对象设置类名，类名生效与否取决于后面值的真假 -->
                 <div class="player_con" :class="{playing:isPlaying}">
                     <img src="images/player_bar.png" class="play_bar" />
-                    <!-- 黑胶碟片 -->
+                    <!-- 黑胶碟片动画 -->
                     <img src="images/disc.png" class="disc autoRotate" />
                     <img class="cover autoRotate" :src="musicCover==''?'./images/cover.png':musicCover" />
                 </div>
